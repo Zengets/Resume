@@ -129,8 +129,7 @@
                 particles.disintegrate();
                 buttonVisible = !buttonVisible;
                 setTimeout(()=>{
-                    $("canvas").fadeOut(1000);
-                    $(".section1").animate({top:0},1000)
+                   window.location.href = "./homepage.html"
                 },1400)
             }
         });

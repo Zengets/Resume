@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,900|IBM+Plex+Mono:500i');
 
+body {
+    --color-text: #0f070a;
+    --color-bg: #fabd69;
+    --color-bg-2: #f98e4a;
+    --color-link: #317bd0;
+    --color-link-hover: #317bd0;
+    background:url("../images/slide1.jpg") no-repeat center;
+    background-size: cover;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
     display: block;
 }
@@ -459,7 +469,7 @@ main {
     height: 100%;
 }
 
-.section1 .img{
+.section1 .img {
     width: 32%;
     height: auto;
     border-radius: 50%;
@@ -468,27 +478,30 @@ main {
     position: relative;
     max-width: 315px;
 }
-.section1 .imgs{
+
+.section1 .imgs {
     width: 100%;
     height: 100%;
     background: rgb(63, 249, 220);
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.8) 100%);
     animation: spin .8s linear 0s infinite;
 }
-.section1 .img .imgs+img{
+
+.section1 .img .imgs + img {
     width: 100%;
     height: auto;
     max-width: 315px;
 }
-.section1 .img img:last-child{
+
+.section1 .img img:last-child {
     width: 96%;
     height: auto;
     border-radius: 50%;
     display: block;
     position: absolute;
     left: 0;
-    right:0;
-    top:0;
+    right: 0;
+    top: 0;
     bottom: 0;
     margin: auto;
 }
@@ -511,6 +524,7 @@ main {
         transform: rotate(360deg);
     }
 }
+
 @-ms-keyframes spin {
     from {
         transform: rotate(0deg);
@@ -519,6 +533,7 @@ main {
         transform: rotate(360deg);
     }
 }
+
 @-moz-keyframes spin {
     from {
         transform: rotate(0deg);
@@ -527,6 +542,7 @@ main {
         transform: rotate(360deg);
     }
 }
+
 @-o-keyframes spin {
     from {
         transform: rotate(0deg);
